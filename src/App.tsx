@@ -14,7 +14,6 @@ import useScrollDirection from "./hooks/useScrollDirection";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 function Home() {
-
   return (
     <>
       <img
@@ -24,7 +23,6 @@ function Home() {
       />
 
       <section className="hero">
-
         <div className="hero-content">
           <p className="eyebrow">GIFTS & JUICE BY RC</p>
 
@@ -45,7 +43,10 @@ function Home() {
               Explore Gift Sets and Decor Services
             </Link>
 
-            <Link to="/gifts?category=juices" className="btn btn-secondary">
+            <Link
+              to="/gifts?category=juices"
+              className="btn btn-secondary"
+            >
               Discover Our Juices
             </Link>
           </div>
@@ -62,26 +63,34 @@ function Home() {
 }
 
 function App() {
-  const scrollDirection = useScrollDirection();
+  const isAtTop = useScrollDirection();
+
   return (
     <BrowserRouter>
       <ScrollToTop />
 
-  <div className="app">
+      <div className="app">
 
-  <header className={`navbar ${scrollDirection === "down" ? "navbar-hidden" : "navbar-visible"}`}>
-    <Link to="/" className="logo">
-      <img src={logo} alt="Gifts & Juice by RC logo" />
-    </Link>
+        <header
+          className={`navbar ${
+            isAtTop ? "navbar-visible" : "navbar-hidden"
+          }`}
+        >
+          <Link to="/" className="logo">
+            <img
+              src={logo}
+              alt="Gifts & Juice by RC logo"
+            />
+          </Link>
 
-    <nav>
-      <Link to="/">Home</Link>
-      <Link to="/gifts">Services</Link>
-      <Link to="/custom-gifts">Custom Gifts</Link>
-      <Link to="/about">About Us</Link>
-      <Link to="/contact">Contact</Link>
-    </nav>
-  </header>
+          <nav>
+            <Link to="/">Home</Link>
+            <Link to="/gifts">Services</Link>
+            <Link to="/custom-gifts">Custom Gifts</Link>
+            <Link to="/about">About Us</Link>
+            <Link to="/contact">Contact</Link>
+          </nav>
+        </header>
 
         <main>
           <Routes>
@@ -92,6 +101,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
+
       </div>
     </BrowserRouter>
   );

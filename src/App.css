@@ -18,7 +18,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  transition: transform 1.0s ease;
+  transition: transform 1s ease;
 }
 
 .navbar-hidden {
@@ -74,7 +74,7 @@
   width: 100%;
   height: 100vh;
   object-fit: cover;
-  opacity: 0.20;
+  opacity: 0.28;
   z-index: 0;
 }
 
@@ -189,6 +189,7 @@
   }
 }
 
+
 /* =========================
    WHAT WE OFFER
 ========================= */
@@ -239,12 +240,12 @@
   background: var(--soft-pink);
 }
 
-.juice-card {
-  background: #f1f8f1;
+.offer-juice-card {
+  background: #e8ede2;
 }
 
 .custom-card {
-  background: #f4f4f4;
+  background: #f1e5e7;
 }
 
 .offer-number {
@@ -276,18 +277,13 @@
   color: var(--deep-pink);
 }
 
-.juice-card a {
+.offer-juice-card a {
   color: var(--dark-green);
 }
 
 .custom-card a {
   color: var(--black);
 }
-
-
-/* =========================
-   OFFER RESPONSIVE
-========================= */
 
 @media (max-width: 900px) {
   .offer-grid {
@@ -298,6 +294,7 @@
     min-height: 280px;
   }
 }
+
 
 /* =========================
    FEATURED GIFTS
@@ -384,11 +381,6 @@
   margin-top: 50px;
 }
 
-
-/* =========================
-   FEATURED GIFTS RESPONSIVE
-========================= */
-
 @media (max-width: 900px) {
   .featured-header {
     flex-direction: column;
@@ -413,6 +405,7 @@
     height: 360px;
   }
 }
+
 
 /* =========================
    GIFTS PAGE
@@ -517,11 +510,6 @@
   font-size: 1.35rem;
 }
 
-
-/* =========================
-   GIFTS PAGE RESPONSIVE
-========================= */
-
 @media (max-width: 900px) {
   .catalogue-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -541,6 +529,7 @@
     height: 380px;
   }
 }
+
 
 /* =========================
    JUICES PAGE
@@ -638,11 +627,6 @@
   font-size: 1.35rem;
 }
 
-
-/* =========================
-   JUICES RESPONSIVE
-========================= */
-
 @media (max-width: 1000px) {
   .juice-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -667,6 +651,7 @@
     height: 380px;
   }
 }
+
 
 /* =========================
    ABOUT PAGE
@@ -734,11 +719,11 @@
 }
 
 .value-card:nth-child(2) {
-  background: #f1f8f1;
+  background: #e8ede2;
 }
 
 .value-card:nth-child(3) {
-  background: #f4f4f4;
+  background: #f1e5e7;
 }
 
 .value-card span {
@@ -759,11 +744,6 @@
   color: #666;
   font-size: 0.95rem;
 }
-
-
-/* =========================
-   ABOUT RESPONSIVE
-========================= */
 
 @media (max-width: 800px) {
   .about-story {
@@ -790,7 +770,10 @@
   }
 }
 
-/* GALLERY PAGE */
+
+/* =========================
+   GALLERY PAGE
+========================= */
 
 .gallery-page {
   padding: 100px 6%;
@@ -821,12 +804,12 @@
 }
 
 .gallery-item:nth-child(2) .gallery-placeholder {
-  background: #f1f8f1;
+  background: #e8ede2;
   color: var(--dark-green);
 }
 
 .gallery-item:nth-child(3) .gallery-placeholder {
-  background: #f4f4f4;
+  background: #f1e5e7;
   color: var(--black);
 }
 
@@ -849,7 +832,10 @@
   }
 }
 
-/* CUSTOM GIFTS PAGE */
+
+/* =========================
+   CUSTOM GIFTS PAGE
+========================= */
 
 .custom-page {
   background: var(--white);
@@ -912,7 +898,7 @@
 .custom-step {
   min-height: 260px;
   padding: 35px;
-  background: #f4f4f4;
+  background: #f1e5e7;
   border-radius: 18px;
 }
 
@@ -921,7 +907,7 @@
 }
 
 .custom-step:nth-child(3) {
-  background: #f1f8f1;
+  background: #e8ede2;
 }
 
 .custom-step span {
@@ -968,7 +954,10 @@
   }
 }
 
-/* CONTACT PAGE */
+
+/* =========================
+   CONTACT PAGE
+========================= */
 
 .contact-page {
   background: var(--white);
@@ -1033,6 +1022,17 @@
   color: #444;
 }
 
+.contact-details a {
+  display: block;
+  margin-top: 5px;
+  color: var(--deep-pink);
+  transition: opacity 0.2s ease;
+}
+
+.contact-details a:hover {
+  opacity: 0.7;
+}
+
 .contact-form-wrapper {
   padding: 40px;
   background: #f8f8f8;
@@ -1054,6 +1054,10 @@
 .form-group label {
   font-size: 0.9rem;
   font-weight: 600;
+}
+
+.form-group label span {
+  color: var(--deep-pink);
 }
 
 .form-group input,
@@ -1079,6 +1083,36 @@
   align-self: flex-start;
 }
 
+.contact-socials {
+  padding-left: 20px;
+}
+
+.contact-socials h2 {
+  margin: 20px 0 35px;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.05;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(23, 23, 23, 0.15);
+}
+
+.social-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(23, 23, 23, 0.15);
+  transition: color 0.2s ease, padding 0.2s ease;
+}
+
+.social-link:hover {
+  color: var(--deep-pink);
+  padding-left: 8px;
+}
+
 @media (max-width: 800px) {
   .contact-content {
     grid-template-columns: 1fr;
@@ -1100,7 +1134,10 @@
   }
 }
 
-/* JUICE PREVIEW */
+
+/* =========================
+   JUICE PREVIEW
+========================= */
 
 .juice-preview {
   padding: 110px 6%;
@@ -1196,6 +1233,11 @@
   }
 }
 
+
+/* =========================
+   CUSTOM GIFT REQUEST
+========================= */
+
 .custom-request {
   padding: 100px 6%;
   background: var(--soft-pink);
@@ -1232,60 +1274,11 @@
   opacity: 0.7;
 }
 
-.form-group label span {
-  color: var(--deep-pink);
-}
-
-.contact-details a {
-  display: block;
-  margin-top: 5px;
-  color: var(--deep-pink);
-  transition: opacity 0.2s ease;
-}
-
-.contact-details a:hover {
-  opacity: 0.7;
-}
-
-.contact-socials {
-  padding-left: 20px;
-}
-
-.contact-socials h2 {
-  margin: 20px 0 35px;
-  font-size: clamp(2.5rem, 5vw, 4.5rem);
-  line-height: 1.05;
-}
-
-.social-links {
-  display: flex;
-  flex-direction: column;
-  border-top: 1px solid rgba(23, 23, 23, 0.15);
-}
-
-.social-link {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-  border-bottom: 1px solid rgba(23, 23, 23, 0.15);
-  transition: color 0.2s ease, padding 0.2s ease;
-}
-
-.social-link:hover {
-  color: var(--deep-pink);
-  padding-left: 8px;
-}
-
 @media (max-width: 768px) {
   .custom-request {
     grid-template-columns: 1fr;
     gap: 40px;
     padding: 70px 6%;
-  }
-
-  .contact-socials {
-    padding-left: 0;
   }
 
   .custom-whatsapp-buttons {

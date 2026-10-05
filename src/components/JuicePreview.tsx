@@ -7,23 +7,23 @@ import pineapple from "../assets/juices/classic/WhatsApp Image 2026-09-25 at 22.
 
 function JuicePreview() {
   const juices = [
-  {
-    image: cocoPine,
-    name: "Coco-Pine Juice",
-  },
-  {
-    image: zestyOrange,
-    name: "Zesty Orange Juice",
-  },
-  {
-    image: pineMelon,
-    name: "Pine Melon Juice",
-  },
-  {
-    image: pineapple,
-    name: "Pineapple Juice",
-  },
-];
+    {
+      image: cocoPine,
+      name: "Coco-Pine Juice",
+    },
+    {
+      image: zestyOrange,
+      name: "Zesty Orange Juice",
+    },
+    {
+      image: pineMelon,
+      name: "Pine Melon Juice",
+    },
+    {
+      image: pineapple,
+      name: "Pineapple Juice",
+    },
+  ];
 
   return (
     <section className="juice-preview">
@@ -57,7 +57,10 @@ function JuicePreview() {
       </div>
 
       <div className="juice-preview-action">
-        <Link to="/gifts?category=juices" className="btn btn-secondary">
+        <Link
+          to="/gifts?category=juices"
+          className="btn btn-secondary"
+        >
           View All Juices
         </Link>
       </div>

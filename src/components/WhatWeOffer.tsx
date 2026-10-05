@@ -32,7 +32,7 @@ function WhatWeOffer() {
           <Link to="/gifts">Explore Gifts →</Link>
         </div>
 
-        <div className="offer-card juice-card">
+        <div className="offer-card offer-juice-card">
           <span className="offer-number">02</span>
 
           <h3>Fresh Juices</h3>

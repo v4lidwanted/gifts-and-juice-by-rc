@@ -70,7 +70,6 @@ function App() {
       <ScrollToTop />
 
       <div className="app">
-
         <header
           className={`navbar ${
             isAtTop ? "navbar-visible" : "navbar-hidden"
@@ -101,7 +100,6 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
-
       </div>
     </BrowserRouter>
   );

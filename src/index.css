@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap');
 
 :root {
-  --pink: #e8a0b5;
-  --deep-pink: #c85c7a;
+  --pink: #d6c1b1;
+  --deep-pink: #7d263d;
   --black: #171717;
   --white: #ffffff;
-  --soft-pink: #fff7f9;
-  --green: #7bae7f;
-  --dark-green: #527857;
+  --soft-pink: #f7f1eb;
+  --green: #9ba58a;
+  --dark-green: #59634e;
 }
 
 * {
